@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "name": "Brockville (Region 4)",
+    "street": "133 King St. W., Unit 204",
+    "city": "Brockville, ON K6VZ1",
+    "phone": "1-844-765-1415",
+    "fax": "(613) 498-3088"
+  },
+  {
+    "id": "2",
+    "name": "Dryden (Region 7)",
+    "street": "102 Queen Street",
+    "city": "Dryden, ON P8N1A7",
+    "phone": "1-844-765-1423",
+    "fax": "(807) 223-4592"
+  },
+  {
+    "id": "3",
+    "name": "Guelph (Region 2)",
+    "street": "1400 Speedvale Ave. West, Unit A",
+    "city": "Guelph, ON N1H8H3",
+    "phone": "1-844-765-1407",
+    "fax": "(519) 837-9187"
+  }
+]

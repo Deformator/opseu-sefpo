@@ -1,12 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-/**
- * Generated class for the ContactUsRegionalOfficesPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { ContuctUsProvider } from "../../../../providers/contuct-us/contuct-us";
+
+import { ContactUsDetailsPage } from "../../contact-us-details/contact-us-details"
 
 @IonicPage()
 @Component({
@@ -15,11 +12,19 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ContactUsRegionalOfficesPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  regionalOffices = [];
+
+  constructor(public contuctUsProvider: ContuctUsProvider, public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ContactUsRegionalOfficesPage');
+    this.contuctUsProvider.getRegionalOffices().subscribe((rOffices)=> this.regionalOffices = rOffices)
+  }
+
+  officeSelected(office){
+    this.navCtrl.push(ContactUsDetailsPage, {
+      officeDetails : office
+    })
   }
 
 }

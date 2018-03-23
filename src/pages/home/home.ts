@@ -8,6 +8,8 @@ import { ContuctUsPage } from '../../pages/contuct-us/contuct-us'
 })
 export class HomePage {
 
+  
+
   constructor(public navCtrl: NavController) {
 
   }

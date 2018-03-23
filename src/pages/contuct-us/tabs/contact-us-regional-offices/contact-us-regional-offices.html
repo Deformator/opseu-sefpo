@@ -7,12 +7,21 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>contact-us-regional-offices</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
+  <ion-list inset>
+    <ion-item>
+        
+        <button ion-item *ngFor='let office of regionalOffices' (click)="officeSelected(office)">{{office.name}}
+            <ion-icon name='star' item-start></ion-icon>
+        </button>
+    </ion-item>
+
+      
+  </ion-list>
 
 </ion-content>
